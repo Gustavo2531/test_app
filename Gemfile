@@ -45,4 +45,9 @@ group :development do
   gem 'spring'
 end
 
-
+#roup :production do
+ #gem 'pg'
+  
+  #gem 'rails_12factor'
+  
+#raend

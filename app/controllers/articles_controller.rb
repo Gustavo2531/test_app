@@ -19,6 +19,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1/edit
   def edit
+    
   end
 
   # POST /articles
@@ -54,11 +55,15 @@ class ArticlesController < ApplicationController
   # DELETE /articles/1
   # DELETE /articles/1.json
   def destroy
-    @article.destroy
-    respond_to do |format|
-      format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
-      format.json { head :no_content }
-    end
+     @article.destroy#Este no se borra es del original
+     
+    #respond_to do |format|
+     # format.html { redirect_to articles_url, notice: 'Article was successfully destroyed.' }
+      #format.json { head :no_content }
+    #end
+    
+    flash[:notice]="Article was successfully destroyed"
+    redirect_to articles_path
   end
 
   private
