@@ -5,7 +5,7 @@ $navbar-default-bg: black;
 @import "bootstrap";
 #logo{
     float:left;
-    font-size: 1.7 em;
+    font-size: 1.7em;
     color: #fff;
     text-transform:uppercase;
     letter-spacing: -1px;
@@ -99,4 +99,15 @@ footer ul li {
      margin-top:0;
 }
 
+.article-title{
+    font-weight: bold;
+    font-size: 1.5em;
+   
+}
+
+.article-body{
+    border-top:1px solid #eaeaea;
+     padding-top:15px;
+     padding-bottom:15px;
+}
 
